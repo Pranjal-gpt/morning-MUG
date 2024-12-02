@@ -1,0 +1,285 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Merriweather:wght@400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', serif; /* Use for body text */
+    font-family: 'Dancing Script', cursive; 
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+*{
+    margin:0 ;
+    padding: 0;
+    /* font-family:'poppins',sans-serif; */
+    box-sizing: border-box;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 0, 0.277); */
+    align-items: center;
+    font-size: larger;
+    padding:0 200px;
+    /* background-color: aqua; */
+
+}
+.logo img{
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    gap:70px;
+    align-items: center;
+    
+
+
+}
+nav a{
+    text-decoration: none;
+    color:azure;
+    font-size: 1.5em;
+
+}
+nav a:hover{
+    color: #6D4D41;
+
+}
+.main{
+    background-image: url("asset/main.png");
+    height: 100vh;
+    width: 100vw;
+    background-size:cover;
+    background-position: bottom;
+    position: relative;
+}
+.Box1{
+    position: absolute;
+    top:180px;
+    left:50%;
+    transform: translateX(-50%);
+    /* background-color: rgba(0, 0, 0, 0.47); */
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    color: azure;
+    
+    
+    
+}
+.Box1 h1{
+    font-size: 5em;
+}
+.Box1 h2{
+    font-size: 3em;
+}
+.Box1 p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.about{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color:#ecc591; */
+    background-image: url(asset/aboutbg.png);
+    background-size: cover;
+
+}
+.about-img img{
+
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100%;
+    
+    
+}
+.about-desc{
+    width: 40%;
+    /* background-color: aliceblue; */
+    height: 500px;
+    padding:20px 20px;
+    
+}
+.about-desc h1{
+text-align: center;
+padding: 20px 0;
+font-size: 2.5em;
+}
+.about-desc p{
+    padding:20px;
+    text-align: justify;
+    font-size: 1.8em;
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url("asset/menubg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+    background-position: bottom;
+
+}
+.menu h1{
+
+    text-align: center;
+    padding: 30px ;
+    font-size:2.5em ;
+    color:black;
+}
+.cards{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    height: 500px;
+
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.82em;
+    line-height: 1.2em;
+    color:black;
+
+}
+.card{
+    background-color:rgba(1, 1, 1, 0.168);
+    width: 40%;
+    height: 500px;
+    border-radius: 50px;
+    padding: 0 100px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.line{
+    height: 400px;
+    
+    width: 2px;
+    background-color:gold;
+}
+li:hover{
+    /* color: goldenrod; */
+    background-color:#6D4D41;
+    color: white;
+    border-radius: 10px;
+    padding: 0 5px ;
+    cursor: pointer;
+}
+.service-card img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+.services{
+    height: 80vh;
+    background-image: url("asset/service.png");
+    /* background-color: darksalmon; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:70px;
+    padding: 10px 0;
+    /* justify-content: center; */
+
+}
+.services h1{
+    padding: 20px;
+    color: azure;
+    font-size: 2.5em;
+}
+.service-cards{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    width: 78%;
+    /* gap:50px; */
+    
+    
+    
+}
+.service-card{
+    /* background-color: aquamarine; */
+    border:   2px solid white;
+    border-radius: 10px;
+    padding: 20px ;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    
+}
+.service-card h3{
+    font-size: 2rem;
+    color: azure;
+}
+.order{
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: black;
+}
+.order:hover{
+    background-color: #6D4D41;
+}
+footer{
+    
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+ 
+    align-items:center ;
+    gap:40px;
+    padding:50px 0 20px 0  ;
+    background-image: url("asset/footer.png");
+}
+.icons{
+font-size: xx-large;
+
+
+}
+.icons i:hover{
+    scale: 120%;
+
+
+}
+ .icons i{
+    color: #1B1107;
+
+}
+footer .links a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
+    
+
+}
+footer .links a:hover{
+    color: black;
+}
+
+footer .links{
+    display: flex;
+   gap:10px;
+   
+}
+
+
